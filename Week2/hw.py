@@ -1,7 +1,8 @@
 from random import randint
 ask_for_try_again = "yes"
-range = int(input("What range do you want it to be? (0, your number)"))
-random_number = randint(0, range)
+lowerbound = int(input("What range do you want it to be? (pls make it small)"))
+upperbound = int(input("What range do you want it to be? (pls make it bigger than last number)"))
+random_number = randint(lowerbound, upperbound)
 while ask_for_try_again == "yes":
     guess = int(input("What is the number??"))
     if guess == random_number:
