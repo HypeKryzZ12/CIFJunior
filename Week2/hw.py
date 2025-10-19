@@ -10,6 +10,10 @@ while ask_for_try_again == "yes":
         ask_for_try_again = "no"
     else:
         print("YOU LOSE :(")
+        if guess > random_number:
+            print("Number too big...")
+        if guess < random_number:
+            print("Number too small...")
         ask_for_try_again = str(input("Do you want to try again? (yes or no)"))
         if ask_for_try_again == "yes":
             ask_for_try_again = "yes"
