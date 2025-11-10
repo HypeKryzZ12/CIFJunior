@@ -8,6 +8,6 @@ weather = [
     ["Saturday",[9, 11]],
 ]
 
-print ("This is the weather forcast for this week:")
-for items in weather:
-    print (items)
+print ("This is the weather forecast for this week:")
+for day, temps in weather:
+    print(f"{day}: {temps[0]} {temps[1]}")
